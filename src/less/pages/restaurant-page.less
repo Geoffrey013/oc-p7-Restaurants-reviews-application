@@ -1,0 +1,149 @@
+.restaurant-interface {
+    padding: 50px 0;
+
+    .restaurant-header {
+        margin-bottom: 30px;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .address-wrapper {
+            .icon {
+                margin-right: 7px;
+            }
+            .phone-icon:before {
+                margin: 0 12px 10px 12px;
+                content: '';
+                display: inline-block;
+                height: 20px;
+                vertical-align: middle;
+                width: 1px;
+                background-color: @grey;
+            }
+        }
+    }
+
+    .restaurant-single-img {
+        img {
+            max-height: 750px;
+        }
+    }
+
+    .carousel {
+        padding: 15px;
+        background-color: @dark-grey;
+        position: relative;
+
+        .carousel-prev, .carousel-next {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            border-radius: 50%;
+            top: 50%;
+            margin-top: -20px;
+            cursor: pointer;
+            border: 1px solid @dark-grey;
+            transition: transform 0.3s;
+        }
+
+        .carousel-prev:hover, .carousel-next:hover {
+            transform: scale(1.2);
+        }
+
+        .carousel-prev {
+            background: #fff url('http://www.evbteam.everblazingcreation.com/demofolder/brushed/brushed/Source%20Files/ICONS%20+%20FONT/Icons/SVG/arrow-light-round-left.svg') center center no-repeat;
+            background-size: 20px 20px;
+            left: -5px;
+        }
+
+        .carousel-next {
+            background: #fff url('http://www.evbteam.everblazingcreation.com/demofolder/brushed/brushed/Source%20Files/ICONS%20+%20FONT/Icons/SVG/arrow-light-round-right.svg') center center no-repeat;
+            background-size: 20px 20px;
+            right: -5px;
+        }
+
+        img {
+            height: 620px;
+        }
+    }
+
+    .opening-form-wrapper {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        .opening-hours {
+            h3 {
+                margin-bottom: 15px;
+            }
+        }
+
+        .reviews-header {
+            margin-bottom: 15px;
+        }
+
+        .add-reviews {
+
+            form {
+                text-align: center;
+
+                .form-group:first-child {
+                    text-align: left;
+                }
+            }
+
+            form > * > * {
+                font-family: 'Average', sans-serif;
+            }
+
+            button.exit-form {
+                display: none;
+            }
+        }
+    }
+
+    .published-reviews {
+        .review:last-child {
+            border-bottom: 0;
+        }
+
+        .review {
+            padding: 15px 0;
+            display: flex;
+            border-bottom: 1px solid @grey;
+            .post-id {
+                .avatar {
+                    width: 70%;
+                    text-align: center;
+
+                    .pseudo {
+                        margin-top: 5px;
+                        line-height: 18px;
+                    }
+                }
+
+            }
+            .post-content {
+                .rate {
+                    margin-bottom: 10px;
+                }
+                .title-comment {
+                    margin-bottom: 10px;
+                }
+                .publication-date {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .map-return {
+        margin-top: 20px;
+        text-align: center;
+
+        .btn-custom {
+            display: inline;
+        }
+    }
+
+}      

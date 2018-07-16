@@ -1,0 +1,132 @@
+@media (max-width: 991px) {
+
+    .restaurant-interface {
+
+        .opening-form-wrapper {
+
+            .opening-hours {
+                margin-bottom: 40px;
+            }
+
+            .reviews-header {
+                margin-bottom: 15px;
+            }
+
+            .add-reviews {
+
+                form {
+                    text-align: center;
+
+                    .form-group:first-child {
+                        text-align: left;
+                    }
+                }
+
+                form > * > * {
+                    font-family: 'Average', sans-serif;
+                }
+
+                button.exit-form {
+                    display: none;
+                }
+            }
+        }
+
+        .published-reviews {
+            .review {
+
+                .post-id {
+
+                    .avatar {
+                        width: 70%;
+
+                        .pseudo {
+                            margin-top: 5px;
+                            line-height: 18px;
+                        }
+                    }
+
+                }
+                .post-content {
+                    .rate {
+                        margin-bottom: 10px;
+                    }
+                    .title-comment {
+                        margin-bottom: 10px;
+                    }
+                    .publication-date {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .restaurant-interface {
+        padding: 20px 5px;
+
+        .restaurant-header {
+            .address-wrapper {
+                .icon {
+                    margin-right: 7px;
+                }
+
+
+                .phone-wrapper {
+                    display: block;
+
+                    .phone-icon:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .carousel {
+            padding: 5px;
+
+            .carousel-prev {
+                left: 0;
+            }
+
+            .carousel-next {
+                right: 0;
+            }
+
+            img {
+                height: 400px;
+            }
+        }
+
+        .published-reviews {
+
+            .review {
+                padding: 25px 5px;
+
+                .post-id {
+                    margin-bottom: 10px;
+                    position: relative;
+
+                    .avatar {
+                        width: 25%;
+
+                        img {
+                            margin-left: 20px;
+                        }
+
+                        .pseudo {
+                            position: absolute;
+                            bottom: 30px;
+                            right: 45px;
+                            margin-top: 5px;
+                            line-height: 18px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

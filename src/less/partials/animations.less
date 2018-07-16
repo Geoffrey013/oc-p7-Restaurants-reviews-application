@@ -1,0 +1,93 @@
+.figure-1:hover {
+  img {
+    opacity: 1;
+  }
+  .caption {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+}
+
+.figure-1 {
+    overflow: hidden;
+  position: relative;
+  img {
+    margin: 0px;
+    padding: 0px;
+    z-index: 4;
+  }
+  .caption {
+    width: 100%;
+    height: 30%;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.45s ease-in-out;
+    .blur {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      z-index: 5;
+      position: absolute;
+    }
+    .caption-text {
+      width: 100%;
+      z-index: 10;
+      color: @white;
+      position: absolute;
+      text-align: center;
+      top: 25%;
+    }
+  }
+}
+
+
+
+.figure-2:hover {
+  img {
+    opacity: 1;
+
+  }
+  .caption {
+    opacity: 1;
+  }
+}
+.figure-2 {
+  position: relative;
+  img {
+    margin: 0px;
+    padding: 0px;
+    z-index: 4;
+  }
+  .caption {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all 0.45s ease-in-out;
+    .blur {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      z-index: 5;
+      position: absolute;
+    }
+    .action-button-container {
+      width: 100%;
+      z-index: 10;
+      position: absolute;
+      text-align: center;
+      top: 45%;
+      .btn-custom {
+        color: @white;
+        border-color: @white;
+        &:hover {
+          background-color: @white;
+          color: @black;
+        }
+      }
+    }
+  }
+}

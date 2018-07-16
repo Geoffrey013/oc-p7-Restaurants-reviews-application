@@ -1,0 +1,119 @@
+.main-content {
+    height: 100%;
+
+    #root {
+        height: 100%;
+
+        .router {
+            height: 100%;
+
+            .container-fluid {
+                height: 100%;
+
+                .row {
+                    height: 100%;
+
+                    aside {
+                        padding: 0;  /* FULL SCREEN INTERFACE */
+                        height: 100%;
+                        overflow-y: scroll;
+                        overflow-scrolling: auto;
+                        .padding-wrapper {
+                            padding: 0 15px;
+
+                            .sidebar-header {
+                                margin-top: 50px;
+                                margin-bottom: 70px;
+                                text-align: center;
+
+                                .rating-form {
+                                    margin-top: 30px;
+                                    display: flex;
+                                    justify-content: space-around;
+
+                                    .range-input {
+                                        width: 200px;
+                                        margin: 0 auto;
+
+                                        .rc-slider-step {
+
+                                        }
+                                        .rc-slider-handle {
+                                            border-color: @gold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .restaurants-list {
+
+                            .restaurant-list-item {
+                                margin-bottom: 60px;
+
+                                .details-wrapper {
+                                    .item-name-with-rate{
+                                        height: inherit;
+                                    }
+
+                                    .item-location {
+                                        line-height: 18px;
+                                        margin: 10px 0 20px 0;
+                                    }
+                                }
+
+                                .thumbnail-wrapper {
+
+                                    figure {
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    div.col-lg-8 {
+                        padding-right: 0;  /* FULL SCREEN INTERFACE */
+                        height: 100%;
+                        .GMap {
+                            .add-restaurant-wrapper {
+                                width: 50%;
+                                position: absolute;
+                                top: 25%;
+                                left: 25%;
+                                z-index: 1000;
+                                background-color: @dark-grey;
+                                color: @white;
+                                text-align: center;
+                                padding: 10% 150px 10% 150px;
+
+                                h4 {
+                                    margin-bottom: 20px;
+                                }
+
+                                .add-restaurant-form {
+                                    .form-group:first-child {
+                                        text-align: left;
+                                    }
+                                }
+                                .add-restaurant-form > * > * {
+                                    font-family: 'Average', sans-serif;
+                                }
+
+                                button.exit-form {
+                                    position: absolute;
+                                    top: 2px;
+                                    right: 2px;
+                                    background-color: @dark-grey;
+
+                                    svg {
+                                        color: @white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
